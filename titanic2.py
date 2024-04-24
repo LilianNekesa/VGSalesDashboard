@@ -7,7 +7,7 @@ st.write("This app analyzes the Titanic dataset and displays various visualizati
 
 @st.cache_data
 def load_data():
-    url = 'C:/Users/Admin/Downloads/archive (6).zip'
+    url = 'C:\Users\Admin\Downloads\titanic.csv.zip'
     data = pd.read_csv(url)
     data['Age'].fillna(data['Age'].median(), inplace=True)
     data['Embarked'].fillna(data['Embarked'].mode()[0], inplace=True)
